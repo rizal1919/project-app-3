@@ -47,6 +47,9 @@ class AdminController extends Controller
         $validatedData = $request->validate([
             'username' => 'required',
             'password' => 'required'
+        ],[
+            'username.required' => 'username harus diisi',
+            'password.required' => 'password harus diisi'
         ]);
 
         $validatedData['password'] = \Illuminate\Support\Facades\Hash::make($validatedData['password']);

@@ -6,12 +6,22 @@
     <div class="container col-sm-3" style="margin-top: 100px;">
         <h2 class="mb-3 mt-5 text-center">Pendaftaran Akun</h2>
         <div class="form-floating" >
-            <input type="text" style="border-radius: 5px 5px 0px 0px;" name="username" id="username" class="form-control" placeholder="username">
+            <input type="text" style="border-radius: 5px 5px 0px 0px;" name="username" id="username" class="form-control @error('username') is-invalid @enderror" placeholder="username" required>
             <label for="username">Username</label>
+            @error('username')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+            @enderror
         </div>
         <div class="form-floating mb-3">
-            <input type="password" name="password" style="border-radius: 0px 0px 5px 5px;" id="password" class="form-control" placeholder="password">
+            <input type="password" name="password" style="border-radius: 0px 0px 5px 5px;" id="password" class="form-control @error('password') is-invalid @enderror" placeholder="password" required>
             <label for="password">Password</label>
+            @error('password')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+            @enderror
         </div>
         <div class="from-check mb-5">
             <input type="checkbox" id="cekPass" class="form-check-input">

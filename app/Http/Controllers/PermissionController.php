@@ -94,7 +94,8 @@ class PermissionController extends Controller
             'city.required' => 'Kota harus dipilih',
             'leaveTime.required' => 'Tanggal Keberangkatan Harus diisi',
             'arriveTime.required' => 'Tanggal Tiba harus diisi',
-            'status.required' => 'Status belum ditentukan'
+            'status.required' => 'Status belum ditentukan',
+            'keterangan.required' => 'Keterangan belum diberikan'
         ]);
 
         $validatedData['city'] = $this->getCity->name;
