@@ -15,7 +15,7 @@
         </div>
         <div class="from-check mb-5">
             <input type="checkbox" id="cekPass" class="form-check-input">
-            <label for="" class="form-check-label">show password</label>
+            <label for="cekPass" class="form-check-label">show password</label>
         </div>
         <div class="row g-1">
             <a href="/" class="col-sm-2 text-decoration-none btn btn-dark mx-2"><span data-feather="arrow-left"></span></a>

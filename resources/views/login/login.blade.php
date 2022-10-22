@@ -3,7 +3,7 @@
 @section('container')
 <form action="/login" method="post">
     @csrf
-        <div class="container d-flex justify-content-center" style="margin-top: 100px;">
+        <div class="container d-flex justify-content-center" style="margin-top: 50px;">
             <div class="col-sm-3">
                 @if( session('success') )
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -14,6 +14,12 @@
                 @if( session('loginError') )
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <strong>{{ session('loginError') }}</strong>.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                @endif
+                @if( session('logoutSuccess') )
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>{{ session('logoutSuccess') }}</strong> terimakasih untuk hari ini.
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 @endif

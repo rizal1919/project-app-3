@@ -4,7 +4,7 @@
     <span class="text-muted">Aplikasi Perijinan Dinas Karyawan.</span>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light">
         <li class="nav-item">
-          <a class="nav-link active" id="nav" href="#">About</a>
+          <a class="nav-link active" id="nav" href="/about">About</a>
         </li>
         <li class="nav-item">
           <form action="/logout" method="post">
