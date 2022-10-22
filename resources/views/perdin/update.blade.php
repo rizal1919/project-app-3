@@ -14,7 +14,7 @@
             <div class="card-body">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nama Lengkap</label>
-                    <input type="text" value="{{ old('name', $data->name) }}" name="name" placeholder="masukkan nama lengkap" id="name" class="form-control form-control-sm">
+                    <input type="text" value="{{ old('name', $data->name) }}" name="name" placeholder="masukkan nama lengkap" id="name" class="form-control form-control-sm" required>
                 </div>
                 <div class="mb-3">
                     <label for="city" class="form-label">Kota Tujuan</label>
@@ -31,11 +31,11 @@
                 </div>
                 <div class="mb-3">
                     <label for="leaveTime" class="form-label">Tanggal Keberangkatan</label>
-                    <input type="date" name="leaveTime" value="{{ old('leaveTime', $data->leaveTime) }}" id="leaveTime" class="form-control form-control-sm">
+                    <input type="date" name="leaveTime" value="{{ old('leaveTime', $data->leaveTime) }}" id="leaveTime" class="form-control form-control-sm" required>
                 </div>
                 <div class="mb-3">
                     <label for="arriveTime" class="form-label">Tanggal Kembali</label>
-                    <input type="date" name="arriveTime" value="{{ old('arriveTime', $data->arriveTime) }}" id="arriveTime" class="form-control form-control-sm">
+                    <input type="date" name="arriveTime" value="{{ old('arriveTime', $data->arriveTime) }}" id="arriveTime" class="form-control form-control-sm" required>
                 </div>
                 <div class="mb-3">
                     <label for="status" class="form-label">Tanggal Kembali</label>

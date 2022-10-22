@@ -10,15 +10,10 @@ class AdminController extends Controller
 {
     public function authenticate(Request $request){
 
-        // dd($request->collect());
-
         $credentials = $request->validate([
             'username' => ['required'],
             'password' => ['required']
         ]);
-
-        // dd($credentials);
-        // dd(Auth::guard('administrator')->attempt($credentials));
 
         if( Auth::guard('administrator')->attempt($credentials) ){
 

@@ -15,7 +15,7 @@ class PermissionController extends Controller
 
     public function index(Request $request){
 
-        $data = Permission::Filter(Request(['search']))->paginate(3)->withQueryString();
+        $data = Permission::Filter(Request(['search']))->orderByDesc('id')->paginate(3)->withQueryString();
 
         return view('perdin.index', [
             'datas' => $data
@@ -63,7 +63,7 @@ class PermissionController extends Controller
         
         Permission::create($validatedData);
 
-        return redirect('/perdin')->with('success', '');
+        return redirect('/perdin')->with('success', 'Berhasil');
 
     }
 
@@ -108,13 +108,13 @@ class PermissionController extends Controller
             'keterangan' => $validatedData['keterangan']
         ]);
 
-        return redirect('/perdin')->with('update','');
+        return redirect('/perdin')->with('update','Berhasil');
     }
 
     public function destroy(Permission $permission){
 
         $permission->delete();
 
-        return redirect('/perdin')->with('success','');
+        return redirect('/perdin')->with('delSuccess','Berhasil');
     }
 }

@@ -6,7 +6,7 @@
     <div class="container">
         <h3 class="my-3 text-center">Tentang Aplikasi</h3>
         <h6 class="mb-2">PERDIN - PERIJINAN DINAS</h6>
-        <p class="mb-3">Studi kasus sederhana yang dibuat adalah bertujuan untuk melakukan pendataan terhadap karyawan yang akan melakukan kunjungan dinas ke luar kota. Dalam kasus ini dikhususnya hanya untuk kota-kota di Jawa Timur. Fetch data kota-kota tidak dilakukan secara manual melainkan menggunakan API dari https://emsifa.github.io/api-wilayah-indonesia/api.</p>
+        <p class="mb-3" style="text-align: justify;">Studi kasus sederhana yang dibuat adalah bertujuan untuk melakukan pendataan terhadap karyawan yang akan melakukan kunjungan dinas ke luar kota. Sebelum dapat melakukan kunjungan, semua karyawan harus mendapat form persetujuan yang berstatus approved dari direktur atau pihak terkait. Role yang berperan dalam memanajemen sistem ini dapat seorang HR / Supervisor Divisi. Hal ini akan memudahkan pencatatan setiap kunjungan yang dilakukan oleh karyawan. Dalam kasus ini dikhususnya hanya untuk kota-kota di Jawa Timur. Fetch data kota-kota tidak dilakukan secara manual melainkan menggunakan API dari https://emsifa.github.io/api-wilayah-indonesia/api.</p>
 
         <h6 class="mb-2">FITUR</h6>
         <p class="mb-3">Terdapat beberapa fitur sederhana untuk dapat berinteraksi dengan sistem ini.</p>

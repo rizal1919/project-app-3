@@ -9,13 +9,19 @@
         <a href="/perdin-create" class="mt-2 mb-3 text-decoration-none btn btn-primary">Buat Perijinan</a>
         @if( session('success') )
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <strong>Berhasil!</strong> Perijinan telah dibuat.
+            <strong>{{ session('success') }}</strong> Perijinan telah dibuat.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        @endif
+        @if( session('delSuccess') )
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>{{ session('delSuccess') }}</strong> Perijinan telah dihapus.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         @endif
         @if( session('update') )
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Update!</strong> Perijinan telah diubah.
+            <strong>{{ session('update') }}</strong> Perijinan telah diubah.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
         @endif
