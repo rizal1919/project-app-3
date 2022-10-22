@@ -4,7 +4,7 @@
 <form action="/login" method="post">
     @csrf
         <div class="container d-flex justify-content-center" style="margin-top: 50px;">
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 @if( session('success') )
                 <div class="alert alert-success alert-dismissible fade show" role="alert">
                     <strong>{{ session('success') }}</strong> silahkan login sebagai admin.
